@@ -8,6 +8,7 @@ import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Zap, Settings, Sparkles } from "lucide-react";
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
   { id: "hero-image", url: "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "High-End Gaming PC Interior with Colorful RGB Lights" },
@@ -68,13 +69,13 @@ export default function Home() {
               {
                 title: "Advanced Analytics",
                 description: "Get detailed insights into your business performance",
-                icon: "Zap",
+                icon: Zap,
                 button: { text: "Learn More", href: "#" },
               },
               {
                 title: "Customizable Templates",
                 description: "Easily tailor each block to your needs",
-                icon: "Settings",
+                icon: Settings,
                 button: { text: "Explore", href: "#" },
               }
             ]}
@@ -94,7 +95,7 @@ export default function Home() {
                 subtitle: "Perfect for small teams",
                 features: ["Up to 10 team members", "100GB storage", "Priority support"],
                 badge: "Most Popular",
-                badgeIcon: "Sparkles",
+                badgeIcon: Sparkles,
               },
               {
                 id: "pro",
