@@ -91,14 +91,15 @@ export default function Home() {
             plans={[
               {
                 id: "basic",
+                badge: "Most Popular",
                 price: "$29/mo",
                 subtitle: "Perfect for small teams",
                 features: ["Up to 10 team members", "100GB storage", "Priority support"],
-                badge: "Most Popular",
                 badgeIcon: Sparkles,
               },
               {
                 id: "pro",
+                badge: "Pro Plan",
                 price: "$49/mo",
                 subtitle: "Advanced features for growing teams",
                 features: ["Up to 50 team members", "Unlimited storage", "24/7 support"],
