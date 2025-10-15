@@ -115,7 +115,7 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <FaqBase
             faqs={[
-              { id: "1", title: "What is Mvpblocks?", content: "Mvpblocks is a platform that provides customizable building blocks to streamline your product development.", animationType: 'instant' },
+              { id: "1", title: "What is Mvpblocks?", content: "Mvpblocks is a platform that provides customizable building blocks to streamline your product development." },
               { id: "2", title: "How can I get started?", content: "Simply sign up and start exploring our templates to find what suits your needs." }
             ]}
             className="bg-purple-100 text-gray-900"
