@@ -5,6 +5,7 @@ import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import TextAbout from '@/components/sections/about/TextAbout';
 import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
+import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
 
@@ -67,13 +68,13 @@ export default function Home() {
               {
                 title: "Advanced Analytics",
                 description: "Get detailed insights into your business performance",
-                icon: Zap,
+                icon: "Zap",
                 button: { text: "Learn More", href: "#" },
               },
               {
                 title: "Customizable Templates",
                 description: "Easily tailor each block to your needs",
-                icon: Settings,
+                icon: "Settings",
                 button: { text: "Explore", href: "#" },
               }
             ]}
@@ -93,7 +94,7 @@ export default function Home() {
                 subtitle: "Perfect for small teams",
                 features: ["Up to 10 team members", "100GB storage", "Priority support"],
                 badge: "Most Popular",
-                badgeIcon: Sparkles,
+                badgeIcon: "Sparkles",
               },
               {
                 id: "pro",
@@ -108,6 +109,17 @@ export default function Home() {
           />
         </div>
       </div>
+      <div id="faq" data-section="faq" className="scroll-mt-24">
+        <div className="mx-auto px-4 md:px-6">
+          <FaqBase
+            faqs={[
+              { id: "1", title: "What is Mvpblocks?", content: "Mvpblocks is a platform that provides customizable building blocks to streamline your product development." },
+              { id: "2", title: "How can I get started?", content: "Simply sign up and start exploring our templates to find what suits your needs." }
+            ]}
+            className="bg-purple-100 text-gray-900"
+          />
+        </div>
+      </div>
       <div id="contact" data-section="contact" className="scroll-mt-24">
         <div className="mx-auto px-4 md:px-6">
           <ContactSplit
@@ -116,7 +128,7 @@ export default function Home() {
             description="Subscribe to our newsletter for weekly updates and exclusive content."
             imageSrc={assetMap.find(a => a.id === "contact-image")?.url}
             mediaPosition="right"
-            onSubmit="console.log"
+            onSubmit={email => console.log(email)}
             className="bg-purple-100 text-gray-900"
           />
         </div>
@@ -125,19 +137,15 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <FooterBase
             columns={[
-              {
-                title: "Product",
-                items: [
+              { title: "Product", items: [
                   { label: "Features", href: "features" },
                   { label: "Pricing", href: "pricing" }
-                ],
+                ]
               },
-              {
-                title: "Company",
-                items: [
+              { title: "Company", items: [
                   { label: "About Us", href: "about" },
                   { label: "Contact", href: "contact" }
-                ],
+                ]
               }
             ]}
             logoSrc="/brand/logowhite.svg"
