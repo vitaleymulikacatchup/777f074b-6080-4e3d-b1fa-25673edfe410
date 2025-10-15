@@ -67,13 +67,13 @@ export default function Home() {
               {
                 title: "Advanced Analytics",
                 description: "Get detailed insights into your business performance",
-                icon: "Zap",
+                icon: Zap,
                 button: { text: "Learn More", href: "#" },
               },
               {
                 title: "Customizable Templates",
                 description: "Easily tailor each block to your needs",
-                icon: "Settings",
+                icon: Settings,
                 button: { text: "Explore", href: "#" },
               }
             ]}
@@ -93,7 +93,7 @@ export default function Home() {
                 subtitle: "Perfect for small teams",
                 features: ["Up to 10 team members", "100GB storage", "Priority support"],
                 badge: "Most Popular",
-                badgeIcon: "Sparkles",
+                badgeIcon: Sparkles,
               },
               {
                 id: "pro",
